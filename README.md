@@ -72,6 +72,5 @@ To implement this sky into a project
 
 ## Todo
 * Fix clouds "jumping" after some time
-* Clean up code
 * Rework sun saturation
 * Set WorldEnvironment fog color based on sky color
