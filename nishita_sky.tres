@@ -1,0 +1,66 @@
+[gd_resource type="ShaderMaterial" load_steps=8 format=3 uid="uid://b45abiagp8tuf"]
+
+[ext_resource type="Shader" path="res://nishita_sky.gdshader" id="1_3qhyv"]
+[ext_resource type="CompressedTexture3D" uid="uid://dbfbysid168mx" path="res://godot-volumetric-cloud-demo textures/perlworlnoise.tga" id="1_qd3aw"]
+[ext_resource type="Texture2D" uid="uid://dfkye0uf4i6w1" path="res://godot-volumetric-cloud-demo textures/weather.bmp" id="2_bohio"]
+[ext_resource type="CompressedTexture3D" uid="uid://c4dp6g6gouj2b" path="res://godot-volumetric-cloud-demo textures/worlnoise.bmp" id="3_5fbd6"]
+
+[sub_resource type="Gradient" id="Gradient_gllyc"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.693133, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_d5sdi"]
+seed = 309
+frequency = 1.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_q4x3w"]
+width = 2048
+height = 2048
+color_ramp = SubResource("Gradient_gllyc")
+noise = SubResource("FastNoiseLite_d5sdi")
+
+[resource]
+shader = ExtResource("1_3qhyv")
+shader_parameter/precomputed_sun_visible = true
+shader_parameter/precomputed_sun_enabled = true
+shader_parameter/precomputed_sun_dir = Vector3(0, 0.0132469, -0.999903)
+shader_parameter/precomputed_sun_color = Color(1, 1, 1, 1)
+shader_parameter/precomputed_Atmosphere_sun = Color(0.994039, 0.390172, 0.20851, 1)
+shader_parameter/precomputed_Atmosphere_ambient = Color(0.0282629, 0.0132965, 0.00359788, 1)
+shader_parameter/precomputed_Atmosphere_ground = Color(0.994039, 0.390172, 0.20851, 1)
+shader_parameter/rayleigh_color = Vector3(0.258929, 0.580357, 1)
+shader_parameter/rayleigh = 1.0
+shader_parameter/mie_color = Vector3(1, 1, 1)
+shader_parameter/mie = 1.0
+shader_parameter/mie_eccentricity = 0.76
+shader_parameter/atmosphere_samples_max = 32
+shader_parameter/atmosphere_samples_min = 12
+shader_parameter/atmosphere_samples_horizon_bias = 0.5
+shader_parameter/atmosphere_sun_samples = 32
+shader_parameter/atmosphere_light_samples = 8
+shader_parameter/turbidity = 1.0
+shader_parameter/ground_color = Color(0.1, 0.07, 0.034, 1)
+shader_parameter/intensity = 10.0
+shader_parameter/sun_brightness = 100000.0
+shader_parameter/ground_brightness = 0.5
+shader_parameter/night_sky_brightness = 1.0
+shader_parameter/Height = 1000.0
+shader_parameter/earthRadius = 6.36e+06
+shader_parameter/atmosphereRadius = 6.42e+06
+shader_parameter/rayleighScaleHeight = 7994.0
+shader_parameter/mieScaleHeight = 1200.0
+shader_parameter/clouds = true
+shader_parameter/cloud_samples_horizon = 54
+shader_parameter/cloud_samples_sky = 96
+shader_parameter/_density = 0.097
+shader_parameter/cloud_coverage = 0.25
+shader_parameter/_time_scale = 1.0
+shader_parameter/_time_offset = 0.0
+shader_parameter/cloud_bottom = 1500.0
+shader_parameter/cloud_top = 4000.0
+shader_parameter/cloud_brightness = 1.5
+shader_parameter/cloud_ambient_brightness = 0.5
+shader_parameter/night_sky = SubResource("NoiseTexture2D_q4x3w")
+shader_parameter/worlnoise = ExtResource("3_5fbd6")
+shader_parameter/perlworlnoise = ExtResource("1_qd3aw")
+shader_parameter/weathermap = ExtResource("2_bohio")
