@@ -72,7 +72,6 @@ To implement this sky into a project
 
 ## Todo
 * Fix clouds "jumping" after some time
-* Remove bug: broken pixels sometimes appear on the edge of the atmosphere, when above the atmosphere
 * Clean up code
 * Rework sun saturation
 * Set WorldEnvironment fog color based on sky color
