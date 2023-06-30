@@ -41,9 +41,6 @@ background_intensity = 100000.0
 sky = SubResource("Sky_dunn8")
 tonemap_mode = 2
 tonemap_white = 16.0
-ssao_enabled = true
-ssil_enabled = true
-sdfgi_enabled = true
 glow_enabled = true
 glow_levels/1 = 16.0
 glow_levels/2 = 8.0
@@ -126,7 +123,6 @@ environment = SubResource("Environment_fb38y")
 camera_attributes = SubResource("CameraAttributesPhysical_5vtap")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-visible = false
 mesh = SubResource("PlaneMesh_7tyt4")
 surface_material_override/0 = SubResource("StandardMaterial3D_34618")
 
@@ -154,7 +150,6 @@ cull_mask = 1048574
 fov = 90.0
 
 [node name="Control" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

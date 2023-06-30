@@ -67,8 +67,7 @@ To implement this sky into a project
 7. It may be necessary to reload the scene to make the sky work in the editor
 8. If the sky is very slow try changing the process mode to "High-Quality Incremental" in the Sky settings in the WorldEnvironment
 
-To understand what the shader settings do, read the comments in the `nishita_sky.gdshader` file.
-The variables prefixed with `precomputed_` are set by the `NishitaSky.gd` script, they cannot be modified.
+To understand what the shader settings do, read the comments in the `nishita_sky.gdshader` file. The variables prefixed with `precomputed_` are set by the `NishitaSky.gd` script, they cannot be modified.
 
 ## Todo
 * Fix clouds "jumping" after some time
