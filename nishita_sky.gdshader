@@ -15,16 +15,16 @@ uniform float precomputed_sun_size
 uniform float precomputed_sun_energy = 1.0;
 uniform float precomputed_background_intensity = 1.0;
 
-// Controls the scattering responsible for the blue color of a real life sky
+// Rayleigh scattering gives the sky its blue color, its effects are visible across the whole sky
 uniform vec3 rayleigh_color = vec3(0.258928571428571, 0.580357142857143, 1.0);
 uniform float rayleigh
 	: hint_range(0, 64) =
 		  1.0; // higher values absorb more rayleigh_color, more blue by default
 
-// Controls the scattering responsible for the white horizon of a real life sky
+// Mie scattering creates a haze, which is visible around the sun and the horizon
 uniform vec3 mie_color = vec3(1.0, 1.0, 1.0);
 uniform float mie
-	: hint_range(0, 64) = 1.0; // higher values make a "foggy" atmosphere
+	: hint_range(0, 64) = 1.0; // increase for a "foggy" atmosphere
 uniform float mie_eccentricity : hint_range(-1, 0.99999) = 0.76;
 
 // Sample counts for different parts of the sky
