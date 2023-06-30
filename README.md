@@ -79,6 +79,6 @@ The variables prefixed with `precomputed_` are set by the `NishitaSky.gd` script
     * Position sun, stars, and moon using a real world date/time
 
 ## Images
-* Moon albedo image was rendered from [NASA](https://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=4720)
+* Moon albedo was rendered from [NASA](https://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=4720)
 * Night sky HDRI was underexposed and compressed to webp from [NASA](https://svs.gsfc.nasa.gov/4851#media_group_5169)
-* Earth image was color corrected and converted to webp from [NASA](https://visibleearth.nasa.gov/images/74142/september-blue-marble-next-generation/74159l)
+* Earth image was color corrected and compressed to webp from [NASA](https://visibleearth.nasa.gov/images/74142/september-blue-marble-next-generation/74159l)

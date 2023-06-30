@@ -294,8 +294,8 @@ vec4[4] sample_sky(vec3 dir, vec3 pos, float visiblity) {
 
 /* Begin Cloud Parameters */
 
-// Cloud Raymarching based on: A. Schneider. “The earthRadiusal-Time Volumetric
-// Cloudscapes Of Horizon: Zero Dawn”. ACM SIGGRAPH. Los Angeles, CA: ACM
+// Cloud Raymarching based on: A. Schneider. "The earthRadiusal-Time Volumetric
+// Cloudscapes Of Horizon: Zero Dawn". ACM SIGGRAPH. Los Angeles, CA: ACM
 // SIGGRAPH, 2015. Web. 26 Aug. 2015.
 
 uniform sampler3D worlnoise : filter_linear_mipmap, repeat_enable;
@@ -488,7 +488,7 @@ void sky() {
 	float horizon_dist = dir.y + horizon;
 
 	if (clouds) {
-		/* start Clouds */
+		/* Begin Clouds */
 		//		if (POSITION.y < cloud_top){
 		if ((AT_CUBEMAP_PASS && AT_QUARTER_RES_PASS) ||
 			(!AT_CUBEMAP_PASS && AT_HALF_RES_PASS)) {
