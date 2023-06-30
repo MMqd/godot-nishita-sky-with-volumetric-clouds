@@ -4,37 +4,37 @@ This is a Nishita sky shader for Godot 4.0, with [Clay John's volumetric clouds]
 
 ## Screenshots
 <div style="display:flex">
-    <img src="Screenshots/1%20day.webp" width="50%"/>
+    <img src="Screenshots/1%20day.webp" width="25%"/>
     <p>Day</p>
-    <img src="Screenshots/2%20sunset.webp" width="50%"/>
+    <img src="Screenshots/2%20sunset.webp" width="25%"/>
     <p>Sunset</p>
 </div>
 
 <div style="display:flex">
-    <img src="Screenshots/3%20cloud%20sky.webp" width="50%"/>
+    <img src="Screenshots/3%20cloudy%20sky.webp" width="25%"/>
     <p>Cloudy Sky</p>
-    <img src="Screenshots/4%20partial%20eclipse.webp" width="50%"/>
+    <img src="Screenshots/4%20partial%20eclipse.webp" width="25%"/>
     <p>Partial Eclipse</p>
 </div>
 
 <div style="display:flex">
-    <img src="Screenshots/5%20full%20eclipse.webp" width="50%"/>
+    <img src="Screenshots/5%20full%20eclipse.webp" width="25%"/>
     <p>Full Eclipse</p>
-    <img src="Screenshots/6%20blood%20moon.webp" width="50%"/>
+    <img src="Screenshots/6%20blood%20moon.webp" width="25%"/>
     <p>Blood Moon</p>
 </div>
 
 <div style="display:flex">
-    <img src="Screenshots/7%20night%20sky%20with%20clouds.webp" width="50%"/>
+    <img src="Screenshots/7%20night%20sky%20with%20clouds.webp" width="25%"/>
     <p>Night Sky</p>
-    <img src="Screenshots/8%20night%20sky%20without%20clouds.webp" width="50%"/>
+    <img src="Screenshots/8%20night%20sky%20without%20clouds.webp" width="25%"/>
     <p>Night Sky Without Clouds</p>
 </div>
 
 <div style="display:flex">
-    <img src="Screenshots/9%20earth%20from%20above.webp" width="50%"/>
+    <img src="Screenshots/9%20earth%20from%20above.webp" width="25%"/>
     <p>Earth From Above</p>
-    <img src="Screenshots/10%20earth%20from%20above%20sunset.webp" width="50%"/>
+    <img src="Screenshots/10%20earth%20from%20above%20sunset.webp" width="25%"/>
     <p>Earth From Above Sunset</p>
 </div>
 
