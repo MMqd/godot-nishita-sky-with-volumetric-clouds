@@ -3,6 +3,10 @@
 This is a Nishita sky shader for Godot 4.0, with [Clay John's volumetric clouds](https://github.com/clayjohn/godot-volumetric-cloud-demo) based on [a tutorial by scratch pixel](https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/simulating-sky/simulating-colors-of-the-sky.html).
 
 ## Screenshots
+| Day                                       | Sunset                                       |
+| ----------------------------------------- | -------------------------------------------- |
+| ![Day](Screenshots/1%20day.webp)          | ![Sunset](Screenshots/2%20sunset.webp)       |
+| Description of the day image goes here.   | Description of the sunset image goes here.   |
 <div style="display:flex">
     <div>
         <img src="Screenshots/1%20day.webp" width="100%"/>
