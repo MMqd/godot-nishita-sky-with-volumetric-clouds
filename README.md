@@ -1,61 +1,41 @@
 # Nishita Sky With Volumetric Clouds
 
-This is a Nishita sky shader for Godot 4.0, with [Clay John's volumetric clouds](https://github.com/clayjohn/godot-volumetric-cloud-demo) based on [a tutorial by scratch pixel](https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/simulating-sky/simulating-colors-of-the-sky.html), which is recommended to read to understand what the sky parameters represent, when configuring the sky.
+This is a Nishita sky shader for Godot 4.0, with [Clay John's volumetric clouds](https://github.com/clayjohn/godot-volumetric-cloud-demo) based on [a tutorial by scratch pixel](https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/simulating-sky/simulating-colors-of-the-sky.html).
 
 ## Screenshots
 <div style="display:flex">
-  <div style="flex:1;padding-right:10px;">
-    <img src="Screenshots/1%20day.webp" width="200"/>
+    <img src="Screenshots/1%20day.webp" width="50%"/>
     <p>Day</p>
-  </div>
-  <div style="flex:1;padding-left:10px;">
-    <img src="Screenshots/2 sunset.webp" width="300"/>
+    <img src="Screenshots/2%20sunset.webp" width="50%"/>
     <p>Sunset</p>
-  </div>
 </div>
 
 <div style="display:flex">
-  <div style="flex:1;padding-right:10px;">
-    <img src="Screenshots/3%20cloud%20sky.webp" width="200"/>
+    <img src="Screenshots/3%20cloud%20sky.webp" width="50%"/>
     <p>Cloudy Sky</p>
-  </div>
-  <div style="flex:1;padding-left:10px;">
-    <img src="Screenshots/4%20 partial%20eclipse.webp" width="300"/>
+    <img src="Screenshots/4%20partial%20eclipse.webp" width="50%"/>
     <p>Partial Eclipse</p>
-  </div>
 </div>
 
 <div style="display:flex">
-  <div style="flex:1;padding-right:10px;">
-    <img src="Screenshots/5%20full%20eclipse.webp" width="200"/>
+    <img src="Screenshots/5%20full%20eclipse.webp" width="50%"/>
     <p>Full Eclipse</p>
-  </div>
-  <div style="flex:1;padding-left:10px;">
-    <img src="Screenshots/6%20blood%20moon.webp" width="300"/>
+    <img src="Screenshots/6%20blood%20moon.webp" width="50%"/>
     <p>Blood Moon</p>
-  </div>
 </div>
 
 <div style="display:flex">
-  <div style="flex:1;padding-right:10px;">
-    <img src="Screenshots/7%20night%20sky%20with%20clouds.webp" width="200"/>
+    <img src="Screenshots/7%20night%20sky%20with%20clouds.webp" width="50%"/>
     <p>Night Sky</p>
-  </div>
-  <div style="flex:1;padding-left:10px;">
-    <img src="Screenshots/8%20night%20sky%20without%20clouds.webp" width="300"/>
+    <img src="Screenshots/8%20night%20sky%20without%20clouds.webp" width="50%"/>
     <p>Night Sky Without Clouds</p>
-  </div>
 </div>
 
 <div style="display:flex">
-  <div style="flex:1;padding-right:10px;">
-    <img src="Screenshots/9%20earth%20from%20above.webp" width="200"/>
+    <img src="Screenshots/9%20earth%20from%20above.webp" width="50%"/>
     <p>Earth From Above</p>
-  </div>
-  <div style="flex:1;padding-left:10px;">
-    <img src="Screenshots/10%20earth%20from%20above%20sunset.webp" width="300"/>
+    <img src="Screenshots/10%20earth%20from%20above%20sunset.webp" width="50%"/>
     <p>Earth From Above Sunset</p>
-  </div>
 </div>
 
 ## Features
