@@ -4,6 +4,15 @@ This is a Nishita sky shader for Godot 4.0, with [Clay John's volumetric clouds]
 
 ## Screenshots
 <div style="display:flex">
+    <div>
+        <img src="Screenshots/1%20day.webp" width="100%"/>
+        <p>Day</p>
+    </div>
+    <div>
+    <img src="Screenshots/2%20sunset.webp" width="100%"/>
+    <p>Sunset</p>
+    </div>
+</div>
     <img src="Screenshots/1%20day.webp" width="25%"/>
     <p>Day</p>
     <img src="Screenshots/2%20sunset.webp" width="25%"/>
