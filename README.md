@@ -1,67 +1,98 @@
 # Nishita Sky With Volumetric Clouds
 
-This is a Nishita sky shader for godot 4.0, with [Clay John's volumetric clouds](https://github.com/clayjohn/godot-volumetric-cloud-demo) based on [a tutorial by scratch pixel](https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/simulating-sky/simulating-colors-of-the-sky.html), which is recommended to read to understand what the sky parameters represent, when configuring the sky.
+This is a Nishita sky shader for Godot 4.0, with [Clay John's volumetric clouds](https://github.com/clayjohn/godot-volumetric-cloud-demo) based on [a tutorial by scratch pixel](https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/simulating-sky/simulating-colors-of-the-sky.html), which is recommended to read to understand what the sky parameters represent, when configuring the sky.
 
-## Screenshots (stars amplified for demonstration purposes)
+## Screenshots
+<div style="display:flex">
+  <div style="flex:1;padding-right:10px;">
+    <img src="Screenshots/1%20day.webp" width="200"/>
+    <p>Day</p>
+  </div>
+  <div style="flex:1;padding-left:10px;">
+    <img src="Screenshots/2 sunset.webp" width="300"/>
+    <p>Sunset</p>
+  </div>
+</div>
 
-**Day**
-![day](Screenshots/day.png)
+<div style="display:flex">
+  <div style="flex:1;padding-right:10px;">
+    <img src="Screenshots/3%20cloud%20sky.webp" width="200"/>
+    <p>Cloudy Sky</p>
+  </div>
+  <div style="flex:1;padding-left:10px;">
+    <img src="Screenshots/4%20 partial%20eclipse.webp" width="300"/>
+    <p>Partial Eclipse</p>
+  </div>
+</div>
 
-**Day Without Clouds**
-![day without clouds](Screenshots/day%20without%20clouds.png)
+<div style="display:flex">
+  <div style="flex:1;padding-right:10px;">
+    <img src="Screenshots/5%20full%20eclipse.webp" width="200"/>
+    <p>Full Eclipse</p>
+  </div>
+  <div style="flex:1;padding-left:10px;">
+    <img src="Screenshots/6%20blood%20moon.webp" width="300"/>
+    <p>Blood Moon</p>
+  </div>
+</div>
 
-**High Quality Day**
-![high quality day](Screenshots/high%20quality%20day.png)
+<div style="display:flex">
+  <div style="flex:1;padding-right:10px;">
+    <img src="Screenshots/7%20night%20sky%20with%20clouds.webp" width="200"/>
+    <p>Night Sky</p>
+  </div>
+  <div style="flex:1;padding-left:10px;">
+    <img src="Screenshots/8%20night%20sky%20without%20clouds.webp" width="300"/>
+    <p>Night Sky Without Clouds</p>
+  </div>
+</div>
 
-**Sunset**
-![sunset](Screenshots/sunset.png)
-
-**After Sunset**
-![after sunset](Screenshots/after%20sunset.png)
-
-**Cloudy Night Sky After Sunset**
-![cloudy night sky after sunset](Screenshots/cloudy%20night%20sky%20after%20sunset.png)
-
-**Cloudy Night Sky**
-![cloudy night sky](Screenshots/cloudy%20night%20sky.png)
-
-**Atmosphere from 100km**
-![atmosphere from 100km](Screenshots/atmosphere%20from%20100km.png)
-
-**Low Sun Atmosphere from 100km**
-![low sun atmosphere from 100km](Screenshots/low%20sun%20atmosphere%20from%20100km.png)
-
-**Very Low Sun Atmosphere From 100km**
-![very low sun atmosphere from 100km](Screenshots/very%20low%20sun%20atmosphere%20from%20100km.png)
+<div style="display:flex">
+  <div style="flex:1;padding-right:10px;">
+    <img src="Screenshots/9%20earth%20from%20above.webp" width="200"/>
+    <p>Earth From Above</p>
+  </div>
+  <div style="flex:1;padding-left:10px;">
+    <img src="Screenshots/10%20earth%20from%20above%20sunset.webp" width="300"/>
+    <p>Earth From Above Sunset</p>
+  </div>
+</div>
 
 ## Features
-* Game-ready asset (although in alpha)
+* Game-ready asset
 * Raymarched sky
 * Raymarched clouds that move with the camera
 * Different times of day by rotating the "NishitaSky" node
 * Realistic lighting at different altitudes
-* A night sky
+* A night sky, with Milky Way texture
 * A directional light that takes on the color of the sun in the shader
 * All elements interact with each other: the night sky is blocked by the clouds and attenuated by the atmosphere
 * Ability to configure quality of the shader and turn the clouds on/off
+* Moon
+    * Realistically lit moon influenced by the sun, resulting in different moon phases, including Earth blocking moon (new moon phase, and blood moon)
+* Support for moon and ground textures, accurate textures included
 * Performance optimizations
+
+## Bonus Features
+* Raising the camera high on the Y axis brings the moon closer
+* Moving the camera on the XZ axis (very far) changes the sky and ground texture position
 
 ## Limitations
 * Performance heavy, especially with clouds on
-* The camera must remain below the clouds (but is clamped to cloud height if it goes higher), since the clouds do not actully exist
+* The camera must remain below the clouds (but is clamped to cloud height if it goes higher), since the clouds do not actually exist
 
 ## Improvements
 * For the sky precompute the optical depth between the sun and an arbitrary point along the ray (from Nishita's paper)
 * Add multiple scattering to clouds and sky
-* Physical raytraced clouds, with better lighting (curently the clouds are evenly lit)
+* Physical raytraced clouds, with better lighting (currently the clouds are evenly lit)
 * Better cloud density textures
 * Use cloud sample distance for cloud fog (currently uses distance to clouds)
 * Physically accurate ground material (currently the brightness is just a dot product to the sun)
-* Better sun color saturation (currently some hacks are nessary to get the expected sun brightness and saturation)
+* Better sun color saturation (currently some hacks are necessary to get the expected sun brightness and saturation)
 
 ## How to Use
 To implement this sky into a project
-1. Copy the "NishitaSky" node from the main scene into a the project
+1. Copy the "NishitaSky" node from the main scene into the project
 2. In the "NishitaSky" node set "sun_object_path" variable to the desired directional light, do not make this directional light a child of the "NishitaSky" node
 3. Create an "WorldEnvironment" node, set the sky material to the "nishita_sky" material
 4. Click copy on the sky section of the "WorldEnvironment" node, and paste it into the "sky_material" section of the "NishitaSky" node. **THE MATERIALS MUST BE LINKED FOR THE SKY PARAMETERS TO BE THE SAME ON THE SCRIPT AND THE SHADER**
@@ -72,5 +103,13 @@ To implement this sky into a project
 
 ## Todo
 * Fix clouds "jumping" after some time
+* Clean up code
 * Rework sun saturation
 * Set WorldEnvironment fog color based on sky color
+* Make stars move with the sun
+    * Position sun, stars, and moon using a real world date/time
+
+## Images
+* Moon albedo image was rendered from [NASA](https://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=4720)
+* Night sky HDRI was underexposed and compressed to webp from [NASA](https://svs.gsfc.nasa.gov/4851#media_group_5169)
+* Earth image was color corrected and converted to webp from [NASA](https://visibleearth.nasa.gov/images/74142/september-blue-marble-next-generation/74159l)

@@ -37,6 +37,7 @@ sky_material = ExtResource("2_txcwo")
 
 [sub_resource type="Environment" id="Environment_fb38y"]
 background_mode = 2
+background_intensity = 100000.0
 sky = SubResource("Sky_dunn8")
 tonemap_mode = 2
 tonemap_white = 16.0
@@ -51,7 +52,6 @@ glow_levels/4 = 2.0
 glow_levels/6 = 0.5
 glow_levels/7 = 0.25
 glow_normalized = true
-glow_bloom = 1.0
 glow_hdr_threshold = 0.0
 
 [sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_5vtap"]
@@ -85,19 +85,39 @@ albedo_color = Color(0.286275, 0.701961, 0.294118, 1)
 [node name="Main" type="Node3D"]
 
 [node name="NishitaSky" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.471007, 0.882119, 0, -0.882119, -0.471007, 0, 0, 0)
+transform = Transform3D(0.85681, -0.48743, 0.168147, 0.324956, 0.763631, 0.557873, -0.400348, -0.423352, 0.812679, 0, 0, 0)
 script = ExtResource("1_jf2ik")
 sky_material = ExtResource("2_txcwo")
-sun_object_path = NodePath("../DirectionalLight3D")
+sun_object_path = NodePath("../Sun")
+moon_object_path = NodePath("../Moon Holder/Moon")
 sun_gradient = SubResource("GradientTexture1D_b4qlm")
 sun_cloud_gradient = SubResource("GradientTexture1D_hfemd")
 sun_cloud_ambient_gradient = SubResource("GradientTexture1D_ihvx1")
 sun_cloud_ground_gradient = SubResource("GradientTexture1D_xb4xe")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.471011, 0.882126, 0, -0.882126, -0.471011, 0, 0, 0)
-light_color = Color(0.92075, 0.92075, 0.92075, 1)
-light_angular_distance = 0.53
+[node name="Press F - Space" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1e+07, 0)
+
+[node name="Press F - Space Other Side" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00188e+07, 1e+07, 0)
+
+[node name="Press F - Space Other Side 2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1e+07, 1.00188e+07)
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.856811, -0.487443, 0.168152, 0.324956, 0.763651, 0.557889, -0.400348, -0.423363, 0.812702, 0, 0, 0)
+light_color = Color(0.916235, 0.916235, 0.916235, 1)
+light_angular_distance = 2.35
+shadow_enabled = true
+directional_shadow_blend_splits = true
+
+[node name="Moon Holder" type="Node3D" parent="."]
+transform = Transform3D(0.793073, -0.0738335, -0.604635, 0.498952, 0.648125, 0.575309, 0.349402, -0.757946, 0.55085, 0, 0, 0)
+
+[node name="Moon" type="DirectionalLight3D" parent="Moon Holder"]
+visible = false
+light_intensity_lux = 1000.0
+light_color = Color(0.918936, 0.918936, 0.918936, 1)
 shadow_enabled = true
 directional_shadow_blend_splits = true
 
@@ -106,6 +126,7 @@ environment = SubResource("Environment_fb38y")
 camera_attributes = SubResource("CameraAttributesPhysical_5vtap")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("PlaneMesh_7tyt4")
 surface_material_override/0 = SubResource("StandardMaterial3D_34618")
 
@@ -128,10 +149,12 @@ skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_70bv0")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 0, 0, 0)
+transform = Transform3D(-0.948323, 0.133597, 0.287809, 0, 0.907044, -0.421036, -0.317304, -0.399278, -0.860171, 0, 0, 0)
 cull_mask = 1048574
+fov = 90.0
 
 [node name="Control" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

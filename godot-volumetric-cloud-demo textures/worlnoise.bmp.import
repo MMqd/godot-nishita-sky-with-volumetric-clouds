@@ -3,24 +3,23 @@
 importer="3d_texture"
 type="CompressedTexture3D"
 uid="uid://c4dp6g6gouj2b"
-path.etc2="res://.godot/imported/worlnoise.bmp-1f9acdf96caf7345cd4596da56bb527c.etc2.ctex3d"
-path.s3tc="res://.godot/imported/worlnoise.bmp-1f9acdf96caf7345cd4596da56bb527c.s3tc.ctex3d"
+path.bptc="res://.godot/imported/worlnoise.bmp-07c9d5c2e8f73e8a112f07c06bc532f3.bptc.ctex3d"
 metadata={
-"imported_formats": ["etc2", "s3tc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
-source_file="res://godot-volumetric-cloud-demo-main/worlnoise.bmp"
-dest_files=["res://.godot/imported/worlnoise.bmp-1f9acdf96caf7345cd4596da56bb527c.etc2.ctex3d", "res://.godot/imported/worlnoise.bmp-1f9acdf96caf7345cd4596da56bb527c.s3tc.ctex3d"]
+source_file="res://godot-volumetric-cloud-demo textures/worlnoise.bmp"
+dest_files=["res://.godot/imported/worlnoise.bmp-07c9d5c2e8f73e8a112f07c06bc532f3.bptc.ctex3d"]
 
 [params]
 
 compress/mode=2
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
