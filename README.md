@@ -3,53 +3,26 @@
 This is a Nishita sky shader for Godot 4.0, with [Clay John's volumetric clouds](https://github.com/clayjohn/godot-volumetric-cloud-demo) based on [a tutorial by scratch pixel](https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/simulating-sky/simulating-colors-of-the-sky.html).
 
 ## Screenshots
-| Day                                       | Sunset                                       |
-| ----------------------------------------- | -------------------------------------------- |
-| ![Day](Screenshots/1%20day.webp)          | ![Sunset](Screenshots/2%20sunset.webp)       |
-| Description of the day image goes here.   | Description of the sunset image goes here.   |
-<div style="display:flex">
-    <div>
-        <img src="Screenshots/1%20day.webp" width="100%"/>
-        <p>Day</p>
-    </div>
-    <div>
-    <img src="Screenshots/2%20sunset.webp" width="100%"/>
-    <p>Sunset</p>
-    </div>
-</div>
-    <img src="Screenshots/1%20day.webp" width="25%"/>
-    <p>Day</p>
-    <img src="Screenshots/2%20sunset.webp" width="25%"/>
-    <p>Sunset</p>
-</div>
 
-<div style="display:flex">
-    <img src="Screenshots/3%20cloudy%20sky.webp" width="25%"/>
-    <p>Cloudy Sky</p>
-    <img src="Screenshots/4%20partial%20eclipse.webp" width="25%"/>
-    <p>Partial Eclipse</p>
-</div>
+| ![Day](Screenshots/1%20day.webp) | ![Sunset](Screenshots/2%20sunset.webp) |
+| --- | --- |
+| Day | Sunset |
 
-<div style="display:flex">
-    <img src="Screenshots/5%20full%20eclipse.webp" width="25%"/>
-    <p>Full Eclipse</p>
-    <img src="Screenshots/6%20blood%20moon.webp" width="25%"/>
-    <p>Blood Moon</p>
-</div>
+| ![Cloudy Sky](Screenshots/3%20cloudy%20sky.webp) | ![Partial Eclipse](Screenshots/4%20partial%20eclipse.webp) |
+| --- | --- |
+| Cloudy Sky | Partial Eclipse |
 
-<div style="display:flex">
-    <img src="Screenshots/7%20night%20sky%20with%20clouds.webp" width="25%"/>
-    <p>Night Sky</p>
-    <img src="Screenshots/8%20night%20sky%20without%20clouds.webp" width="25%"/>
-    <p>Night Sky Without Clouds</p>
-</div>
+| ![Full Eclipse](Screenshots/5%20full%20eclipse.webp) | ![Blood Moon](Screenshots/6%20blood%20moon.webp) |
+| --- | --- |
+| Full Eclipse | Blood Moon |
 
-<div style="display:flex">
-    <img src="Screenshots/9%20earth%20from%20above.webp" width="25%"/>
-    <p>Earth From Above</p>
-    <img src="Screenshots/10%20earth%20from%20above%20sunset.webp" width="25%"/>
-    <p>Earth From Above Sunset</p>
-</div>
+| ![Night Sky](Screenshots/7%20night%20sky%20with%20clouds.webp) | ![Night Sky Without Clouds](Screenshots/8%20night%20sky%20without%20clouds.webp) |
+| --- | --- |
+| Night Sky | Night Sky Without Clouds |
+
+| ![Earth From Above](Screenshots/9%20earth%20from%20above.webp) | ![Earth From Above Sunset](Screenshots/10%20earth%20from%20above%20sunset.webp) |
+| --- | --- |
+| Earth From Above | Earth From Above Sunset |
 
 ## Features
 * Game-ready asset
